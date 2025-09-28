@@ -1,0 +1,53 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{mathtools}
+\usepackage{txfonts}
+\usepackage{tkz-euclide}
+\usepackage{listings}
+\usepackage{adjustbox}
+\usepackage{array}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{gvv}
+\usepackage{lmodern}
+\usepackage{circuitikz}
+\usepackage{tikz}
+\lstset{literate={·}{{$\cdot$}}1 {λ}{{$\lambda$}}1 {→}{{$\to$}}1}
+\usepackage{graphicx}
+
+\setbeamertemplate{page number in head/foot}[totalframenumber]
+
+\title{5.4.1}
+\date{September 27,2025}
+\author{ADUDOTLA SRIVIDYA-EE25BTECH11006}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}{Question}
+Using elementary transformations, find the inverse of the following matrix. 
+\begin{align*}
+    \myvec{2&&3\\-4&&-6}
+\end{align*}
+\end{frame}
+
+\begin{frame}{Theoretical Solution}
+We compute the determinant:
+\begin{align}
+\det \myvec{2 & 3 \\ -4 & -6} = (2)(-6) - (3)(-4) = -12 + 12 = 0
+\end{align}
+Since $\det=0$, the matrix is singular and has \textbf{no inverse}.
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Python,C,Python+C codes}
+codes permalink
+\end{frame}
+
+\end{document}
