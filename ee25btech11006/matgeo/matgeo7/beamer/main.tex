@@ -1,0 +1,87 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{txfonts}
+\usepackage{tkz-euclide}
+\usepackage{listings}
+\usepackage{adjustbox}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{gvv}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usepackage{graphicx}
+
+\setbeamertemplate{page number in head/foot}[totalframenumber]
+
+\lstset{
+    language=C,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    stringstyle=\color{orange},
+    commentstyle=\color{green!60!black},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    breaklines=true,
+    showstringspaces=false,
+}
+
+%------------------------------------------------------------
+\title{4.5.8}
+\date{September 30, 2025}
+\author{ADUDOTLA SRIVIDYA - EE25BTECH11006}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}{Question}
+The value of $\lambda$ for which the vectors $3i-6j+k$ and $2i-4j+\lambda k$ are parallel is:  
+a) $2/3$ \quad b) $3/2$ \quad c) $5/2$ \quad d) $2/5$
+\end{frame}
+
+\begin{frame}{Formula}
+Two vectors $\vec{A}$ and $\vec{B}$ are parallel if  
+\begin{align}
+\vec{B} = t \vec{A}
+\end{align}
+for some scalar $t$.
+\end{frame}
+
+\begin{frame}{Solution}
+Given,
+\begin{align}
+    \myvec{2\\-4\\ \lambda} \text{ is parallel to } \myvec{3\\-6\\1}
+\end{align}
+
+\begin{align}
+    \implies \myvec{2\\-4\\ \lambda} = t \myvec{3\\-6\\1}
+\end{align}
+
+\begin{align}
+    \implies 2 = 3t, \ \ -4 = -6t, \ \ \lambda = t
+\end{align}
+
+\begin{align}
+    t = \dfrac{2}{3} \quad \therefore \quad \lambda = \dfrac{2}{3}
+\end{align}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Python,C,Python+C codes}
+codes permalink
+\end{frame}
+
+\begin{frame}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\columnwidth]{figs/fig.png}
+    \caption{Vectors $3i-6j+k$ and $2i-4j+\lambda k$ (parallel in 3D)}
+    \label{fig:Vectors}
+\end{figure}
+\end{frame}
+
+\end{document}
