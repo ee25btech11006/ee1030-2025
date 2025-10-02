@@ -105,24 +105,35 @@ Matrix form:
 \end{align}
 \end{frame}
 
-\begin{frame}{Solving Using Row Operations}
-Start with the augmented matrix:
+\begin{frame}{Solving Using Orthogonal Matrix}
+Let
 \begin{align}
-\augvec{2}{1}{1 & 1 & 18 \\ 1 & -1 & 4}
+    \vec{A} = \myvec{1 & 1 \\ 1 & -1}, \quad \vec{X} = \myvec{l \\ b}, \quad \vec{Y} = \myvec{18 \\ 4}
 \end{align}
-
-Apply row operations:
 \begin{align}
-R_2 \to R_2 - R_1 \implies \augvec{2}{1}{1 & 1 & 18 \\ 0 & -2 & -14} \\
-R_2 \to -\tfrac{1}{2} R_2 \implies \augvec{2}{1}{1 & 1 & 18 \\ 0 & 1 & 7} \\
-R_1 \to R_1 - R_2 \implies \augvec{2}{1}{1 & 0 & 11 \\ 0 & 1 & 7}
+    \vec{A}^T \vec{A} = \myvec{1 & 1 \\ 1 & -1}^T \myvec{1 & 1 \\ 1 & -1} 
+          = \myvec{2 & 0 \\ 0 & 2} = 2I
+\end{align}
+Since $\vec{A}^T \vec{A} = 2I$, we have
+\begin{align}
+    \vec{A}^{-1} = \dfrac{1}{2}\vec{A}^T
+\end{align}
+\end{frame}
+
+\begin{frame}{Solving Using Orthogonal Matrix}
+\begin{align}
+\vec{X}&= \vec{A}^{-1}\vec{Y} \\
+       &= \frac{1}{2}\vec{A}^T \vec{Y} \\
+       &= \frac{1}{2}\myvec{1 & 1 \\ 1 & -1}\myvec{18 \\ 4} \\
+       &= \frac{1}{2}\myvec{22 \\ 14} \\
+       &= \myvec{11 \\ 7}
 \end{align}
 \end{frame}
 
 \begin{frame}{Final Answer}
 Solution:
 \begin{align}
-\myvec{l \\ b} = \myvec{11 \\ 7}
+\vec{X} = \myvec{11 \\ 7}
 \end{align}
 
 \textbf{Therefore:}

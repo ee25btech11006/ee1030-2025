@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.16)  1 OCT 2025 06:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.16)  2 OCT 2025 12:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1772,22 +1772,35 @@ LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
  [3
 
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/
-dvips/lm/lm-mathex.enc}] [4
+dvips/lm/lm-mathex.enc}]
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <10.95> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 121.
 
-] [5
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <8> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 121.
+
+LaTeX Font Info:    Font shape `OT1/lmss/b/n' in size <6> not available
+(Font)              Font shape `OT1/lmss/bx/n' tried instead on input line 121.
+
+ [4
+
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}] [5
+
+] [6
 
 ]
 \openout4 = `main.vrb'.
 
- (./main.vrb) [6
+
+(./main.vrb) [7
 
 ]
-<figs/fig.png, id=199, 502.87875pt x 258.9675pt>
+<figs/fig.png, id=230, 502.87875pt x 258.9675pt>
 File: figs/fig.png Graphic file (type png)
 <use figs/fig.png>
-Package pdftex.def Info: figs/fig.png  used on input line 143.
+Package pdftex.def Info: figs/fig.png  used on input line 154.
 (pdftex.def)             Requested size: 342.29065pt x 176.26941pt.
- [7
+ [8
 
  <./figs/fig.png>]
 \tf@nav=\write8
@@ -1815,22 +1828,24 @@ Package rerunfilecheck Info: Checksums for `main.out':
 (rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 56395 strings out of 474222
- 1350686 string characters out of 5748733
- 2181231 words of memory out of 5000000
- 77671 multiletter control sequences out of 15000+600000
- 590659 words of font info for 72 fonts, out of 8000000 for 9000
+ 56399 strings out of 474222
+ 1350680 string characters out of 5748733
+ 2180232 words of memory out of 5000000
+ 77672 multiletter control sequences out of 15000+600000
+ 596089 words of font info for 74 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  128i,15n,123p,1172b,587s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on main.pdf (7 pages, 135538 bytes).
+pe1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmsy8.pfb>
+Output written on main.pdf (8 pages, 159403 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
- 15 named destinations out of 1000 (max. 500000)
+ 312 PDF objects out of 1000 (max. 8388607)
+ 255 compressed objects within 3 object streams
+ 17 named destinations out of 1000 (max. 500000)
  84 words of extra memory for PDF output out of 10000 (max. 10000000)
 
