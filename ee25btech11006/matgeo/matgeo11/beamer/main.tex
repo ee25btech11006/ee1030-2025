@@ -37,11 +37,21 @@ Using elementary transformations, find the inverse of the following matrix.
 \end{frame}
 
 \begin{frame}{Theoretical Solution}
-We compute the determinant:
+using row reductions:
 \begin{align}
-\det \myvec{2 & 3 \\ -4 & -6} = (2)(-6) - (3)(-4) = -12 + 12 = 0
+    \myvec{2&3\\-4&-6} 
+    \xrightarrow[]{R_2 \rightarrow \frac{R_2}{-2}} 
+    \myvec{2&3\\2&3}
 \end{align}
-Since $\det=0$, the matrix is singular and has \textbf{no inverse}.
+
+\begin{align}
+    R_2 \rightarrow R_2 - R_1 \implies \myvec{2&3 \\ 0&0}
+\end{align}
+since one row becomes zero, the matrix cannot be reduced to the identity matrix
+\end{frame}
+
+\begin{frame}{conclusion}
+Hence, the given matrix is \textbf{not invertible}. 
 \end{frame}
 
 
