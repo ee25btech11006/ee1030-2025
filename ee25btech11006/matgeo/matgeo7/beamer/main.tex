@@ -43,31 +43,44 @@ The value of $\lambda$ for which the vectors $3i-6j+k$ and $2i-4j+\lambda k$ are
 a) $2/3$ \quad b) $3/2$ \quad c) $5/2$ \quad d) $2/5$
 \end{frame}
 
-\begin{frame}{Formula}
-Two vectors $\vec{A}$ and $\vec{B}$ are parallel if  
-\begin{align}
-\vec{B} = t \vec{A}
-\end{align}
-for some scalar $t$.
-\end{frame}
 
 \begin{frame}{Solution}
 Given,
 \begin{align}
     \myvec{2\\-4\\ \lambda} \text{ is parallel to } \myvec{3\\-6\\1}
 \end{align}
-
+If the vectors are parallel, then they are linearly dependent. Hence,
 \begin{align}
-    \implies \myvec{2\\-4\\ \lambda} = t \myvec{3\\-6\\1}
+    \myvec{3 & 2 \\ -6 & -4 \\ 1 & \lambda}\vec{x} = \myvec{0 \\ 0 \\ 0}
 \end{align}
-
+To find the condition for non-trivial solutions, perform row reduction on the coefficient matrix:
 \begin{align}
-    \implies 2 = 3t, \ \ -4 = -6t, \ \ \lambda = t
+\myvec{3 & 2 \\-6 & -4 \\1 & \lambda}
+\xrightarrow{R_2 \rightarrow R_2 + 2R_1}
+\myvec{3 & 2 \\0 & 0 \\1 & \lambda}
 \end{align}
+\end{frame}
 
-\begin{align}
-    t = \dfrac{2}{3} \quad \therefore \quad \lambda = \dfrac{2}{3}
+\begin{frame}{Solution}
+    \begin{align}
+R_1 \rightarrow \frac{R_1}{3} \implies
+\myvec{1 & \frac{2}{3} \\0 & 0 \\1 & \lambda}
 \end{align}
+\begin{align}
+R_3 \rightarrow R_3 - R_1 \implies
+\myvec{1 & \frac{2}{3} \\0 & 0 \\0 & \lambda - \frac{2}{3}}
+\end{align}
+For non-trivial solutions
+\begin{align}
+    \lambda - \frac{2}{3} = 0
+\end{align}
+\end{frame}
+
+\begin{frame}{conclusion}
+    \begin{align}
+    \therefore \lambda = \frac{2}{3}
+\end{align}
+Hence, the vectors are parallel when $\lambda = \frac{2}{3}$.
 \end{frame}
 
 \begin{frame}[fragile]
