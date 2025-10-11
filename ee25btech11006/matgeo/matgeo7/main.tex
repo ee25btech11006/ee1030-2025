@@ -63,32 +63,41 @@ Given,
 \begin{align}
     \myvec{2\\-4\\ \lambda } \text{ is parallel to }  \myvec{3\\-6\\1}
 \end{align}
+
 If the vectors are parallel, then they are linearly dependent. Hence,
 \begin{align}
     \myvec{3 & 2 \\ -6 & -4 \\ 1 & \lambda}\vec{x} = \myvec{0 \\ 0 \\ 0}
 \end{align}
-To find the condition for non-trivial solutions, perform row reduction on the coefficient matrix:
+
 \begin{align}
-\myvec{3 & 2 \\-6 & -4 \\1 & \lambda}
-\xrightarrow{R_2 \rightarrow R_2 + 2R_1}
-\myvec{3 & 2 \\0 & 0 \\1 & \lambda}
+\myvec{3 & 2 \\ -6 & -4 \\ 1 & \lambda}
+\xrightarrow{R_1 \rightarrow \tfrac{R_1}{3}}
+\myvec{1 & \tfrac{2}{3} \\ -6 & -4 \\ 1 & \lambda}
+\xrightarrow{R_2 \rightarrow R_2 + 6R_1}
+\myvec{1 & \tfrac{2}{3} \\ 0 & 0 \\ 1 & \lambda}
+\xrightarrow{R_3 \rightarrow R_3 - R_1}
+\myvec{1 & \tfrac{2}{3} \\ 0 & 0 \\ 0 & \lambda - \tfrac{2}{3}}
 \end{align}
+
+Swap $R_2$ and $R_3$
 \begin{align}
-R_1 \rightarrow \frac{R_1}{3} \implies
-\myvec{1 & \frac{2}{3} \\0 & 0 \\1 & \lambda}
+    \myvec{1 & \tfrac{2}{3} \\ 0 & \lambda - \tfrac{2}{3} \\ 0 & 0}
 \end{align}
+
+Gauss-Jordan elimination depending on \(\lambda\): \\
+
+
+\textbf{If} \(\lambda = \tfrac{2}{3}.\) \\
+Then $R_2$ becomes zero and we have
 \begin{align}
-R_3 \rightarrow R_3 - R_1 \implies
-\myvec{1 & \frac{2}{3} \\0 & 0 \\0 & \lambda - \frac{2}{3}}
+    \myvec{1 & \tfrac{2}{3} \\ 0 & 0 \\ 0 & 0}
 \end{align}
-For non-trivial solutions
-\begin{align}
-    \lambda - \frac{2}{3} = 0
-\end{align}
-\begin{align}
-    \therefore \lambda = \frac{2}{3}
-\end{align}
-Hence, the vectors are parallel when $\lambda = \frac{2}{3}$.
+ Rank = 1 \(\Rightarrow\) columns dependent \(\Rightarrow\) vectors parallel.
+ Therefore,
+ \begin{align}
+     \lambda = \dfrac{2}{3}
+ \end{align}
+
 
 \newpage
 \begin{figure}[H]
